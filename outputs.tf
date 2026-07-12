@@ -1,3 +1,7 @@
+output "bot_service_azure_bots_id" {
+  description = "Map of id values across all bot_service_azure_bots, keyed the same as var.bot_service_azure_bots"
+  value       = { for k, v in azurerm_bot_service_azure_bot.bot_service_azure_bots : k => v.id }
+}
 output "bot_service_azure_bots_cmk_key_vault_key_url" {
   description = "Map of cmk_key_vault_key_url values across all bot_service_azure_bots, keyed the same as var.bot_service_azure_bots"
   value       = { for k, v in azurerm_bot_service_azure_bot.bot_service_azure_bots : k => v.cmk_key_vault_key_url }
