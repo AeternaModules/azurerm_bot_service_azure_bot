@@ -36,7 +36,7 @@ EOT
     name                                                 = string
     resource_group_name                                  = string
     sku                                                  = string
-    public_network_access_enabled                        = optional(bool) # Default: true
+    public_network_access_enabled                        = optional(bool)
     microsoft_app_type                                   = optional(string)
     microsoft_app_tenant_id                              = optional(string)
     microsoft_app_msi_id                                 = optional(string)
@@ -44,9 +44,9 @@ EOT
     luis_key_key_vault_id                                = optional(string)
     luis_key_key_vault_secret_name                       = optional(string)
     luis_app_ids                                         = optional(list(string))
-    local_authentication_enabled                         = optional(bool) # Default: true
+    local_authentication_enabled                         = optional(bool)
     endpoint                                             = optional(string)
-    streaming_endpoint_enabled                           = optional(bool) # Default: false
+    streaming_endpoint_enabled                           = optional(bool)
     display_name                                         = optional(string)
     developer_app_insights_key                           = optional(string)
     developer_app_insights_application_id                = optional(string)
@@ -54,7 +54,7 @@ EOT
     developer_app_insights_api_key_key_vault_id          = optional(string)
     developer_app_insights_api_key_key_vault_secret_name = optional(string)
     cmk_key_vault_key_url                                = optional(string)
-    icon_url                                             = optional(string) # Default: "https://docs.botframework.com/static/devportal/client/images/bot-framework-default.png"
+    icon_url                                             = optional(string)
     tags                                                 = optional(map(string))
   }))
 }
